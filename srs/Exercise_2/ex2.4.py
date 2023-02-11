@@ -26,7 +26,7 @@ def func1(arr, low, high):
         func1(arr, low, pi-1)
         func1(arr, pi + 1, high)
 def func2(array, start, end):
-    p = array[start]
+    p = array[int(end - start)]
     low = start + 1
     high = end
     while True:
@@ -57,5 +57,5 @@ for index in range(10):
 plt.plot(len_list, time_list)
 plt.xlabel("Lenght of array/list (n)")
 plt.ylabel("Time (s)")
-plt.title("funct1, lenght of array V.S. time")
+plt.title("funct1, lenght of array V.S. time- IMPROVED")
 plt.show()
